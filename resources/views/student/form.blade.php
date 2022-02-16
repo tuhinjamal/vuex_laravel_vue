@@ -1,9 +1,13 @@
 @extends('layouts.app')
 @section('content')
-    
-    <div id="app">
-       <student-form_component scope="{{ $scope }}" :id="{{ $id ?? 0 }">
+  <div class="container">
+     <div id="app">
+       <student-form-component scope="{{ $scope }}" 
+       :id="{{ $id ?? 0 }}"
+       >
 
-       </student-form_component>
+       </student-form-component>
     </div>
+  </div>  
+   
 @endsection()
